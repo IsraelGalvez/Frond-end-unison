@@ -1,36 +1,21 @@
-// Variables
-var etiqueta1 = document.querySelector(".etiqueta1")
-var igual = document.querySelectorAll(".igual")
+var vocales = document.querySelectorAll(".vocales")
+var consonantes = document.querySelectorAll(".consonantes")
 
-console.log("igual", igual)
-// Funciones
-    function cambiarColor(){
-        if(igual[0].innerHTML == "a" || igual[0].innerHTML == "e"){
-            igual[0].style.background = "green";
-            igual[0].style.color = "black";
-
-            igual[1].style.background = "green";
-            igual[1].style.color = "black";
-
-            igual[2].style.background = "green";
-            igual[2].style.color = "black";
-
-            igual[3].style.background = "green";
-            igual[3].style.color = "black";
-
-            igual[4].style.background = "green";
-            igual[4].style.color = "black";
-        }else{
-            igual[0].style.background = "green";
-            igual[0].style.color = "black";
-
-            igual[1].style.background = "green";
-            igual[1].style.color = "black";
-        }
-        
+function cambiarColorVocales(){
+    for (i=0; i < 5; i++){
+        vocales[i].style.background = "green";
     }
-//Eventos
-etiqueta1.addEventListener("click", cambiarColor)
+}
 
+function cambiarColorConsonantes(){
+    for (i=0; i < 21; i++){
+        consonantes[i].style.background = "red";
+    }
+}
 
-// Condiciones
+for (j=0; j < 5; j++){
+    vocales[j].addEventListener("click", cambiarColorVocales)
+}
+for (k=0; k < 21; k++){
+    consonantes[k].addEventListener("click", cambiarColorConsonantes)
+}
