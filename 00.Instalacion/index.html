@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	 <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="js/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="js/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="js/bootstrap.bundle.min.js"></script> 
+
+</head>
+<body>
+	<style>
+		.contenedor{
+		  display: flex;
+		}
+		.row{
+		  flex-direction: column;
+		}
+	  </style>
+	  <div class="contenedor">
+
+		<div class="container-fluid p-0">
+
+
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+			<!-- Indicators -->
+			<ul class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ul>
+			
+			<!-- The slideshow -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+				<img src="https://www.w3schools.com/bootstrap4/la.jpg" alt="Los Angeles" width="100%">
+				</div>
+				<div class="carousel-item">
+				<img src="https://www.w3schools.com/bootstrap4/chicago.jpg" alt="Chicago" width="100%">
+				</div>
+				<div class="carousel-item">
+				<img src="https://www.w3schools.com/bootstrap4/ny.jpg" alt="New York" width="100%">
+				</div>
+			</div>
+			
+			<!-- Left and right controls -->
+			<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
+
+		</div>
+
+		<div class="col-4 container-fluid bg-success p-0">
+			<div class="container bg-white">
+			<div class="row">
+				<div class="col-12 col-md-12 col-xl-12 p-3 border text-center"> Logotipo </div>
+				<div class="col-5 col-sm-5 col-md-5 d-none d-x1-block col-xl-5 p-3 border"></div>
+				<div class="col-12 col-sm-12 col-md-12 p-3 border text-md-center text-center"> Boton 1 </div>
+				<div class="col-12 col-sm-12 col-md-12 p-3 border text-md-center text-center"> Boton 2 </div>
+				<div class="col-12 col-sm-12 col-md-12 p-3 border text-md-center text-center"> Boton 3 </div>
+				<div class="col-12 col-sm-12 col-md-12 p-3 border text-md-center text-center"> Boton 4 </div>
+				<div class="col-12 col-sm-12 col-md-12 p-3 border text-md-center text-center"> Boton 5 </div>
+
+			</div>
+			</div>
+
+		</div>
+	  </div>
+	
+
+</body>
+</html>
