@@ -1,0 +1,40 @@
+/* ===============================================
+Escritorio (Xl revisamos en 1366px en adelante)
+=============================================== */
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul, ol{
+    list-style: none;
+}
+a:visited, a:link, a:focus, a:hover, a:active{
+    list-style: none;
+    text-decoration: none;
+}
+
+/* ====================================
+    header
+==================================== */
+header .logotipo{
+    width: 45%;
+}
+/* ===============================================
+TABLET HORIZONTAL (MD revisamos en 768px)
+=============================================== */
+@media (max-width:1199px) and (min-width:992px) {
+    
+}
+
+/* ===============================================
+TABLET VERTICAL (MD revisamos en 576px)
+=============================================== */
+@media (max-width:991px) and (min-width:768px) {
+    
+}
+/* ===============================================
+MÓVIL HORIZONTAL (SM revisamos en 320px)
+=============================================== */
+@media (max-width:575px) {
+    
+}
