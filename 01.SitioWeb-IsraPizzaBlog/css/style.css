@@ -1,7 +1,58 @@
 /* ===============================================
 Escritorio (Xl revisamos en 1366px en adelante)
 =============================================== */
+*{
+    font-family: 'Open Sans', sans-serif;
+}
 
+ul, ol{
+    list-style: none;
+}
+a:visited, a:link, a:focus, a:hover, a:active{
+    list-style: none;
+    text-decoration: none;
+}
+
+/* ====================================
+    header
+==================================== */
+header{
+    background-color: #FFAE6D;
+}
+
+header .logotipo{
+    width: 45%;
+    height: 70%;
+    margin-top: 10px;
+}
+
+header .redes ul li i{
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.redes ul li i.fa-facebook{
+    background-color: #1475e0;
+}
+.redes ul li i.fa-instagram{
+    background-color: #B18768;
+}
+.redes ul li i.fa-twitter{
+    background-color: #00a6ff;
+}
+.redes ul li i.fa-youtube{
+    background-color: #f95f62;
+}
+
+.redes ul li i.fa-snapchat{
+    background-color: #ff9052;
+}
+
+i.fa-bars{
+    font-size: 35px;
+}
 /* ===============================================
 TABLET HORIZONTAL (MD revisamos en 768px)
 =============================================== */
