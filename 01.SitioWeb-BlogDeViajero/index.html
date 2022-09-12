@@ -23,14 +23,14 @@
 
         <div class="row">
           <!-- Logo -->
-          <div class="col-7 p-3">
+          <div class="col-10 col-sm-11 col-md-8 col-lg-7 pt-1 pt-lg-2 p-xl-0">
             <a href="./index.html">
               <img src="./img/logotipo-negativo.png" alt="Logo de juanito Travel" class="img-fluid logotipo">
             </a>
           </div>
 
           <!-- Redes sociales -->
-          <div class="col-3 redes">
+          <div class="d-none d-md-block col-2 col-lg-3 redes">
             <ul class="d-flex justify-content-end pt-2 mt-1">
               <li>
                 <a href="https://www.facebook.com" target="_blank">
@@ -61,14 +61,14 @@
           </div>
 
           <!-- Buscador y boton menu -->
-          <div class="col-2 d-flex justify-content-end pt-2 mt-1">
+          <div class="col-2 col-sm-1 col-md-2 col-lg-2 d-flex justify-content-end pt-2 mt-1">
           	<!-- BUSCADOR -->
-          		<div class="float-left pr-5 mt-1">
+          		<div class="d-none d-md-block pr-4 pr-lg-5 mt-1">
           			<i class="fas fa-search lead text-white"></i>
           		</div>
 
           		<!-- BOTON MENU -->
-          		<div class="float-left pr-3">
+          		<div class="m-0 mt-sm-1 mt-md-0 pr-0 pr-lg-3">
           				<i class="fas fa-bars lead text-white"></i>
           		</div>
           </div>
@@ -76,7 +76,46 @@
         </div>
       </div>
     </header>
-
+  
+    <!-- BUSCADOR PARA MÓVILES -->
+    <div class="container d-block d-md-none py-3">
+      <div class="input-group input-group-sm">
+        <input type="text" class="form-control" placeholder="Buscar">
+        <div class="input-group-append">
+          <span class="input-group-text"><i class="fas fa-search"></i></span>
+        </div>
+      </div>
+      <!-- Redes sociales para móvil-->
+      <div class="d-block d-md-none redes redesMovil p-0 bg-white w-100 pt-2">
+        <ul class="d-flex justify-content-center p-0">
+          <li>
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fab fa-facebook lead rounded-circle text-white mr-3 mr-sm-4"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="fab fa-instagram lead rounded-circle text-white mr-3 mr-3 mr-ms-4"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank">
+              <i class="fab fa-twitter lead rounded-circle text-white mr-3 mr-sm-4"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com" target="_blank">
+              <i class="fab fa-youtube lead rounded-circle text-white mr-3 mr-sm-4"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.snapchat.com/es" target="_blank">
+              <i class="fab fa-snapchat lead rounded-circle text-white mr-3 mr-sm-4"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <script src="https://kit.fontawesome.com/1debff4fcb.js" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
 

@@ -24,7 +24,7 @@ header .logotipo{
     width: 45%;
 }
 
-header .redes ul li i{
+.redes ul li i{
     width: 35px;
     line-height: 35px;
     text-align: center;
@@ -52,6 +52,13 @@ header .redes ul li i{
 i.fa-bars{
     font-size: 35px;
 }
+
+.redesMovil{
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
 /* ===============================================
 TABLET HORIZONTAL (MD revisamos en 768px)
 =============================================== */
@@ -63,11 +70,24 @@ TABLET HORIZONTAL (MD revisamos en 768px)
 TABLET VERTICAL (MD revisamos en 576px)
 =============================================== */
 @media (max-width:991px) and (min-width:768px) {
-    
+    header .logotipo{
+        width: 55%;
+    }
 }
 /* ===============================================
 MÓVIL HORIZONTAL (SM revisamos en 320px)
 =============================================== */
-@media (max-width:575px) {
-    
+@media (max-width:767px) and (min-width:576px){
+    header .logotipo{
+        width: 65%;
+    }
+}
+
+/* ===============================================
+MÓVIL VERTICAL (SM revisamos en 320px)
+=============================================== */
+@media (max-width:575px){
+    header .logotipo{
+        width: 100%;
+    }
 }
