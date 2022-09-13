@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/plugins/jquery.jdSlider.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="icon" href="./img/icons/icons8-pizza-48.png">
   </head>
@@ -29,7 +30,7 @@
 
         <!-- Redes sociales -->
         <div class="d-none d-md-block col-2 col-lg-3 redes">
-          <ul class="d-flex justify-content-end pt-2 mt-1">
+          <ul class="d-flex justify-content-end pt-2 mt-2">
             <li>
               <a href="https://www.facebook.com" target="_blank">
                 <i class="fa-brands fa-facebook lead float-left rounded-circle text-white mr-1"></i>
@@ -59,9 +60,9 @@
         </div>
 
         <!-- Buscador y boton menu -->
-        <div class="col-2 col-sm-1 col-md-2 col-lg-2 d-flex justify-content-end pt-2 mt-1">
+        <div class="col-2 col-sm-1 col-md-2 col-lg-2 d-flex justify-content-end pt-2 mt-2">
           <!-- BUSCADOR -->
-            <div class="d-none d-md-block pr-4 pr-lg-5 mt-1">
+            <div class="d-none d-md-block pr-4 pr-lg-5 mt-2">
               <i class="fas fa-search lead text-white"></i>
             </div>
 
@@ -74,7 +75,26 @@
       </div>
     </div>
   </header>
-
+  <!-- Banner -->
+  <div class="container-fluid p-0">
+    <section class="jd-slider fade-slider">
+        <div class="slide-inner">
+          <ul class="slide-area">
+            <li><img src="img/pizza-banner-1.jpg" alt="En el mar" class="img-fluid img-banner"></li>
+            <li><img src="img/pizza-banner-2.jpg" alt="En la pradera" class="img-fluid img-banner"></li>
+            <li><img src="img/pizza-banner-3.jpg" alt="En windoxs xp" class="img-fluid img-banner"></li>
+            <li><img src="img/pizza-banner-4.jpg" alt="En el cielito lindo" class="img-fluid img-banner"></li>
+          </ul>
+        </div>
+        <div class="controller d-none">
+          <a class="auto" href="#">
+            <i class="fas fa-play fa-xs"></i>
+            <i class="fas fa-pause fa-xs"></i>
+          </a>
+          <div class="indicate-area"></div>
+        </div>
+    </section>
+  </div>
   <!-- BUSCADOR PARA MÓVILES -->
   <div class="container d-block d-md-none py-3">
     <div class="input-group input-group-sm">
@@ -116,12 +136,13 @@
   </div>
 
     <script src="https://kit.fontawesome.com/1debff4fcb.js" crossorigin="anonymous"></script>
-    <script src="./js/script.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/plugins/jquery.jdSlider-latest.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
