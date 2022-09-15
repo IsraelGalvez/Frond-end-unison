@@ -26,15 +26,16 @@ header{
 }
 
 header .logotipo{
-    width: 50%;
+    width: 45%;
+    height: 70%;
+    margin-top: 10px;
 }
 
-.redes ul li i{
+header .redes ul li i{
     width: 35px;
     line-height: 35px;
     text-align: center;
     cursor: pointer;
-    
 }
 
 .redes ul li i.fa-facebook{
@@ -58,16 +59,29 @@ header .logotipo{
     height: 306px;
 }
 
-i.fa-bars{
+.fa-bars{
     font-size: 35px;
 }
 
 .redesMovil{
     position: fixed;
-    bottom: 0px;
+    bottom: -10px;
     left: 50%;
     transform: translate(-50%, 0%);
 }
+
+/* BANNER */
+.fade-slider{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.bannerEstatico{
+    background: rgba(0, 0, 0, 0);
+}
+
 /* ===============================================
 TABLET HORIZONTAL (MD revisamos en 768px)
 =============================================== */
