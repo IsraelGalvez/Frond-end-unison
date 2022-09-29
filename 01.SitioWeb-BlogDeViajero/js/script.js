@@ -22,8 +22,20 @@ $(window).scroll(function(){
     if(posY > alturaBanner){
         $("header").css({"background":"white"})
         $("header .logotipo").css({"filter":"invert(100%)"})
+        $(".fa-search, .fa-bars").css({"color":"black"})
     }else{
         $("header").css({"background":"rgba(0,0,0,.5)"})
-        $("header .logotipo").css({"filter":"invert(0%)"}) 
+        $("header .logotipo").css({"filter":"invert(0%)"})
+        $(".fa-search, .fa-bars").css({"color":"white"})
     }
+})
+
+// MENU
+
+$(".fa-bars").click(function(){
+    $(".menu").css({"display":"block"})
+})
+
+$(".btnClose").click(function(){
+    $(".menu").css({"display":"none"})
 })
