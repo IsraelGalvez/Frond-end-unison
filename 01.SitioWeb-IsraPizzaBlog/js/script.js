@@ -17,8 +17,8 @@ $(window).scroll(function(){
     var posY = window.pageYOffset;
 
     if(posY > alturaBanner){
-        $("header").css({"background":"white"})
-        $(".fa-search, .fa-bars").css({"color":"black"})
+        $("header").css({"background":"rgba(0,0,0,.7)"})
+        $(".fa-search, .fa-bars").css({"color":"white"})
     }else{
         $("header").css({"background":"rgba(0,0,0,.5)"})
         $(".fa-search, .fa-bars").css({"color":"white"})
@@ -33,4 +33,13 @@ $(".fa-bars").click(function(){
 
 $(".btnClose").click(function(){
     $(".menu").css({"display":"none"})
+})
+
+// GRID CATEGORÍAS
+$(".grind figure").mouseover(function(){
+    $(this).css({"background-position":"right bottom"})
+})
+
+$(".grind figure").mouseover(function(){
+    $(this).css({"background-position":"left top"})
 })

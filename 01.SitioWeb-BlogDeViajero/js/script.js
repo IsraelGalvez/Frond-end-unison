@@ -39,3 +39,12 @@ $(".fa-bars").click(function(){
 $(".btnClose").click(function(){
     $(".menu").css({"display":"none"})
 })
+
+// GRID CATEGORÍAS
+$(".grind figure").mouseover(function(){
+    $(this).css({"background-position":"right bottom"})
+})
+
+$(".grind figure").mouseover(function(){
+    $(this).css({"background-position":"left top"})
+})
