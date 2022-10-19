@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Juanito Travel</title>
+  <link rel="icon" href="./img/icons/icons8-pizza-48.png">
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+  <script src="https://kit.fontawesome.com/a5bddd06d4.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="CSS/jquery.jdSlider.css">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+  <!-- Preload -->
+  <!-- <div id="preload">
+    <div id="porcentajeCarga">0%</div>
+    <div id="lineaCarga">
+      <div id="rellenoCarga"></div>
+    </div>
+    <div id="estadoCarga"></div>
+  </div> -->
+
+  <!-- Cabecera -->
+  <header class="container-fluid">
+    <div class="container p-0">
+      <div class="row">
+
+        <!-- Logo -->
+        <div class="col-10 col-sm-11 col-md-8 col-lg-7 pt-1 pt-lg-2 p-xl-0 ">
+          <a href="index.html">
+            <img src="./img/pizzalogo.png" alt="Logo" class="img-fluid logotipo">
+          </a>
+        </div>
+
+        <!-- Redes -->
+        <!-- f #1877f2
+              t #1d9bf0
+              y #ff0000
+              s #ff9052
+              i #b18768 -->
+
+        <div class="d-none d-md-block col-2 col-lg-3 redes">
+          <ul class="d-flex justify-content-end pt-2 mt-1">
+            <li><a href="https://www.facebook.com/" target="_blank"><i
+                  class="fa-brands fa-facebook lead float-left rounded-circle text-white mr-1"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i
+                  class="fa-brands fa-instagram lead float-left rounded-circle text-white mr-1"></i></a></li>
+            <li><a href="https://twitter.com/?lang=es" target="_blank"><i
+                  class="fa-brands fa-twitter lead float-left rounded-circle text-white mr-1"></i></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank"><i
+                  class="fa-brands fa-youtube lead float-left rounded-circle text-white mr-1"></i></a></li>
+            <li><a href="https://www.snapchat.com/es" target="_blank"><i
+                  class="fa-brands fa-snapchat lead float-left rounded-circle text-white mr-1"></i></a></li>
+          </ul>
+        </div>
+
+        <!-- Buscador y menu -->
+        <div class="col-2 col-sm-1 col-md-2 col-lg-2 d-flex justify-content-end pt-2 mt-1">
+          <!-- Buscador -->
+          <div class="d-none d-md-block pr-4 pr-lg-5 mt-1">
+            <i class="fa-solid fa-magnifying-glass lead float-left" data-toggle="collapse" data-target="#buscador"></i>
+          </div>
+          <!-- Menu -->
+          <div class="m-0 mt-sm-1 mt-md-0 pr-2 pr-lg-3">
+            <i class="fa-solid fa-bars lead float-left"></i>
+          </div>
+        </div>
+        <!-- Entrada buscador -->
+        <div id="buscador" class="collapse col-12">
+          <div class="input-group float-right w-50 pl-xl-5 pb-3">
+            <input type="text" class="form-control" placeholder="Buscar">
+            <div class="input-group-append">
+              <span class="input-group-text"><i class="fas fa-search"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <div class="bannerEstatico"></div>
+
+  <!---<div class="container-fluid p-0"> -->
+  <section class="jd-slider fade-slider">
+    <div class="slide-inner">
+      <ul class="slide-area">
+        <li><img src="img/pizza-banner-1.jpg" alt="En el mar" class="img-fluid"></li>
+        <li><img src="img/pizza-banner-2.jpg" alt="En la pradera" class="img-fluid"></li>
+        <li><img src="img/pizza-banner-3.jpg" alt="En windoxs xp" class="img-fluid"></li>
+        <li><img src="img/pizza-banner-4.jpg" alt="En el cielito lindo" class="img-fluid"></li>
+      </ul>
+    </div>
+    <div class="controller d-none">
+      <a class="auto" href="#">
+        <i class="fas fa-play fa-xs"></i>
+        <i class="fas fa-pause fa-xs"></i>
+      </a>
+      <div class="indicate-area"></div>
+    </div>
+  </section>
+  <!-- </div>-->
+
+  <!-- Buscador móvil -->
+  <div class="container-fluid d-block d-md-none py-3 bg-white">
+    <div class="input-group input-group-sm">
+      <input type="text" class="form-control" placeholder="Buscar">
+      <div class="input-group-append">
+        <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MENU -->
+  <div class="container-fluid menu">
+    <a href="#" class="btnClose">X</a>
+    <ul class="nav flex-column text-center">
+      <li class="nav-item"><a class="nav-link text-white" href="#">La mejor pizza estilo hawaiana</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#">La mejor receta para hacer masa de pizza</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#">Pizza margarita original</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#">La mejor pizza estilo mexicana</a></li>
+    </ul>
+  </div>
+
+  <!-- Grid de categorias -->
+  <div class="container-fluid py-2 py-md-5 bg-white grid">
+    <div class="container p-0">
+      <div class="d-flex">
+        <div class="d-flex flex-column columna1">
+          <figure class="p-2 photo1">
+            <p class="text-uppercase p-1 p-md-3 p-xl-4">Pizza Estilo Hawaiana</p>
+          </figure>
+          <figure class="p-2 photo2">
+            <p class="text-uppercase p-1 p-md-3 p-xl-4">Receta para masa de pizza</p>
+          </figure>
+          <figure class="d-block d-md-none p-2 photo6">
+            <p class="text-uppercase p-1 p-md-3 p-xl-4">Pizza margarita original</p>
+          </figure>
+        </div>
+        <div class="d-flex flex-column flex-fill columna2">
+          <div class="d-block d-md-flex">
+            <figure class="p-2 flex-fill photo3">
+              <p class="text-uppercase p-1 p-md-3 p-xl-4">Pizza estilo mexicana</p>
+            </figure>
+            <figure class="p-2 flex-fill photo4">
+              <p class="text-uppercase p-1 p-md-3 p-xl-4">Pizza Argentina</p>
+            </figure>
+          </div>
+          <figure class="p-2 flex-fill photo5">
+            <p class="text-uppercase p-1 p-md-3 p-xl-4">Pizza alrededor del mundo</p>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenido Blog -->
+  <div class="container-fluid bg-white contenidoInicio pb-sm-5 pb-4">
+    <div class="container">
+      <div class="row">
+        <!-- Columna izquierda -->
+        <div class="col-12 col-md-8 col-lg-9 p-0 pr-lg-5">
+          <!-- Articulo 01 -->
+          <div class="row">
+            <div class="col-12 col-lg-5">
+              <h5 class="d-block d-lg-none py-3">Type something here</h5>
+              <div class="d-block d-lg-none fecha">27.09.2022</div>
+              <img src="./img/articulo01.jpg" alt="Lorem" class="img-fluid" width="100%">
+            </div>
+            <div class="col-lg-7 introArticulo">
+              <h4 class="d-none d-lg-block">La mejor pizza estilo hawaiana</h4>
+              <p class="my-2 my-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam praesentium optio officia, aut quo, non dolor,
+                recusandae corrupti cupiditate debitis itaque provident
+                quaerat fugiat impedit mollitia exercitationem. A, optio
+                labore?</p>
+              <a href="" class="float-right">Leer Más</a>
+              <div class="d-none d-lg-block fecha">27.09.2022</div>
+            </div>
+          </div>
+          <hr class="mb-4 mb-lg-5" style="border: 1px solid #79EF39">
+          <!-- Articulo 2 -->
+          <div class="row">
+            <div class="col-12 col-lg-5">
+              <h5 class="d-block d-lg-none py-3">Type something here</h5>
+              <div class="d-block d-lg-none fecha">27.09.2022</div>
+              <img src="./img/pizzaPhoto6.jpg" alt="Lorem" class="img-fluid" width="100%">
+            </div>
+            <div class="col-lg-7 introArticulo">
+              <h4 class="d-none d-lg-block">Pizza margarita original</h4>
+              <p class="my-2 my-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam praesentium optio officia, aut quo, non dolor,
+                recusandae corrupti cupiditate debitis itaque provident
+                quaerat fugiat impedit mollitia exercitationem. A, optio
+                labore?</p>
+              <a href="" class="float-right">Leer Más</a>
+              <div class="d-none d-lg-block fecha">27.09.2022</div>
+            </div>
+          </div>
+          <hr class="mb-4 mb-lg-5" style="border: 1px solid #79EF39">
+          <!-- Publicidad -->
+          <div class="d-block d-lg-none">
+            <img src="img/ad02.jpg" class="img-fluid" alt="" width="100%">
+          </div>
+          <!-- Articulo 3 -->
+          <div class="row">
+            <div class="col-12 col-lg-5">
+              <h5 class="d-block d-lg-none py-3">Type something here</h5>
+              <div class="d-block d-lg-none fecha">27.09.2022</div>
+              <img src="./img/articulo03.jpg" alt="Lorem" class="img-fluid" width="100%">
+            </div>
+            <div class="col-lg-7 introArticulo">
+              <h4 class="d-none d-lg-block">La mejor receta para hacer masa de pizza</h4>
+              <p class="my-2 my-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam praesentium optio officia, aut quo, non dolor,
+                recusandae corrupti cupiditate debitis itaque provident
+                quaerat fugiat impedit mollitia exercitationem. A, optio
+                labore?</p>
+              <a href="" class="float-right">Leer Más</a>
+              <div class="d-none d-lg-block fecha">27.09.2022</div>
+            </div>
+          </div>
+          <hr class="mb-4 mb-lg-5" style="border: 1px solid #79EF39">
+          <!-- Articulo 4 -->
+          <div class="row">
+            <div class="col-12 col-lg-5">
+              <h5 class="d-block d-lg-none py-3">Type something here</h5>
+              <div class="d-block d-lg-none fecha">27.09.2022</div>
+              <img src="./img/articulo04.jpg" alt="Lorem" class="img-fluid" width="100%">
+            </div>
+            <div class="col-lg-7 introArticulo">
+              <h4 class="d-none d-lg-block">La mejor pizza estilo mexicana</h4>
+              <p class="my-2 my-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam praesentium optio officia, aut quo, non dolor,
+                recusandae corrupti cupiditate debitis itaque provident
+                quaerat fugiat impedit mollitia exercitationem. A, optio
+                labore?</p>
+              <a href="" class="float-right">Leer Más</a>
+              <div class="d-none d-lg-block fecha">27.09.2022</div>
+            </div>
+          </div>
+          <hr class="mb-4 mb-lg-5" style="border: 1px solid #79EF39">
+          <!-- Articulo 5-->
+          <div class="row">
+            <div class="col-12 col-lg-5">
+              <h5 class="d-block d-lg-none py-3">Type something here</h5>
+              <div class="d-block d-lg-none fecha">27.09.2022</div>
+              <img src="./img/pizzaPhoto4.jpg" alt="Lorem" class="img-fluid" width="100%">
+            </div>
+            <div class="col-lg-7 introArticulo">
+              <h4 class="d-none d-lg-block">Pizza alrededor del mundo</h4>
+              <p class="my-2 my-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam praesentium optio officia, aut quo, non dolor,
+                recusandae corrupti cupiditate debitis itaque provident
+                quaerat fugiat impedit mollitia exercitationem. A, optio
+                labore?</p>
+              <a href="" class="float-right">Leer Más</a>
+              <div class="d-none d-lg-block fecha">27.09.2022</div>
+            </div>
+          </div>
+          <hr class="mb-4 mb-lg-5" style="border: 1px solid #79EF39">
+          <div class="container d-none d-md-block">
+            <ul class="pagination justify-content-center"></ul>
+          </div>
+        </div>
+        <!-- Columna Derecha -->
+        <div class="d-none d-md-block pt-md-4 pt-lg-0 col-md-4 col-lg-3">
+          <div class="sobreMi">
+            <h4>Sobre Mi</h4>
+            <img src="img/sobreMi.jpg" alt="Lorem" class="img-fluid my-1">
+            <p>El blog de pizza es manejado por dos personas apasionadas con el mundo digital y la gastronomía. Somos dos estudiantes de ingeniería de software por lo cual decidimos aplicar nuestro conocimiento en este blog para compartir información sobre gastronomía, en este caso sobre la comida rápida más famosa del mundo la cual es pizza.</p>
+          </div>
+          <!-- Publicidad -->
+          <div class="my-4">
+            <img src="./img/ad01.jpeg" class="img-fluid" alt="">
+          </div>
+          <!-- Comentarios -->
+          <div class="my-4">
+            <h4>Comentarios recientes</h4>
+            <div class="d-flex my-3">
+              <div class="w-100 w-xl-50 pr-3 pt-2"><img src="img/com01.jpg" alt="Lorem" class="img-fluid"></div>
+              <div>
+                <p class="small">No pogan recetas de pizza con piña por favor.</p>
+              </div>
+            </div>
+            <div class="d-flex my-3">
+              <div class="w-100 w-xl-50 pr-3 pt-2"><img src="img/com02.jpg" alt="Lorem" class="img-fluid"></div>
+              <div>
+                <p class="small">La receta de este blog la recomiendo al 100%.</p>
+              </div>
+            </div>
+            <div class="d-flex my-3">
+              <div class="w-100 w-xl-50 pr-3 pt-2"><img src="img/com03.jpg" alt="Lorem" class="img-fluid"></div>
+              <div>
+                <p class="small">Deliciosa la receta de este blog recomendado.</p>
+              </div>
+            </div>
+            <!-- Publicidad -->
+            <div class="my-4">
+              <img src="./img/ad02.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="my-4">
+              <img src="img/ad05.png" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Redes moviles movil -->
+  <div class="d-block d-md-none redes redesMovil p-0 bg-white w-100 pt-2">
+    <ul class="d-flex justify-content-center p-0">
+      <li><a href="https://www.facebook.com/" target="_blank"><i
+            class="fa-brands fa-facebook lead rounded-circle text-white mr-2 mr-sm-2"></i></a></li>
+      <li><a href="https://www.instagram.com/" target="_blank"><i
+            class="fa-brands fa-instagram lead rounded-circle text-white mr-2 mr-sm-2"></i></a></li>
+      <li><a href="https://twitter.com/?lang=es" target="_blank"><i
+            class="fa-brands fa-twitter lead rounded-circle text-white mr-2 mr-sm-2"></i></a></li>
+      <li><a href="https://www.youtube.com/" target="_blank"><i
+            class="fa-brands fa-youtube lead rounded-circle text-white mr-2 mr-sm-2"></i></a></li>
+      <li><a href="https://www.snapchat.com/es" target="_blank"><i
+            class="fa-brands fa-snapchat lead rounded-circle text-white mr-2 mr-sm-2"></i></a></li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer class="container-fluid py-5 d-none d-md-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-lg-6">
+          <!--Grid de categorias footer  -->
+          <div class="p-1 bg-white gridFooter">
+            <div class="container p-0">
+              <div class="d-flex">
+                <div class="d-flex flex-column columna1">
+                  <figure class="p-2 m-0 flex-fill photo1">
+                    <p class="text-uppercase p-1 p-md-2 p-xl-1 small">HAWAIANA</p>
+                  </figure>
+                  <figure class="p-2 m-0 flex-fill photo2">
+                    <p class="text-uppercase p-1 p-md-2 p-xl-1 small">MEXICANA</p>
+                  </figure>
+                </div>
+                <div class="d-flex flex-column flex-fill columna2">
+                  <div class="d-block d-md-flex">
+                    <figure class="p-2 m-0 flex-fill photo3">
+                      <p class="text-uppercase p-1 p-md-2 p-xl-1 small">MASA</p>
+                    </figure>
+                    <figure class="p-2 m-0 flex-fill photo4">
+                      <p class="text-uppercase p-1 p-md-2 p-xl-1 small">MUNDO</p>
+                    </figure>
+                  </div>
+                  <figure class="p-2 m-0 flex-fill photo5">
+                    <p class="text-uppercase p-1 p-md-2 p-xl-1 small">ARGENTINA</p>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- NEWLETTER -->
+        <div class="d-none d-lg-block col-lg-1 col-xl-2"></div>
+        <div class="col-md-5 col-lg-5 col-xl-4 pt-5">
+          <h6 class="text-white">Inscribete en nuestro newletter:</h6>
+          <div class="input-group my-4">
+            <input type="text" class="form-control" placeholder="Ingresa tu Email">
+            <div class="input-group-append">
+              <span class="input-group-text bg-dark text-white">Inscribirse</span>
+            </div>
+          </div>
+          <!-- Redes moviles movil -->
+          <div class="p-0 w-100 pt-2">
+            <ul class="d-flex justify-content-left p-0">
+              <li><a href="https://www.facebook.com/" target="_blank"><i
+                    class="fa-brands fa-facebook lead text-white mr-2 mr-sm-2"></i></a></li>
+              <li><a href="https://www.instagram.com/" target="_blank"><i
+                    class="fa-brands fa-instagram lead text-white mr-2 mr-sm-2"></i></a></li>
+              <li><a href="https://twitter.com/?lang=es" target="_blank"><i
+                    class="fa-brands fa-twitter lead text-white mr-2 mr-sm-2"></i></a></li>
+              <li><a href="https://www.youtube.com/" target="_blank"><i
+                    class="fa-brands fa-youtube lead text-white mr-2 mr-sm-2"></i></a></li>
+              <li><a href="https://www.snapchat.com/es" target="_blank"><i
+                    class="fa-brands fa-snapchat lead text-white mr-2 mr-sm-2"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+		integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+		integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+		crossorigin="anonymous"></script>
+
+  <script src="Js/jquery.jdSlider-latest.js"></script>
+  <script src="Js/pagination.min.js"></script>
+  <script src="Js/jquery.superscrollorama.js"></script>
+  <script src="Js/TweenMax.min.js"></script>
+  <script src="Js/scrollUP.js"></script>
+  <script src="Js/jquery.easing.js"></script>
+  <script src="Js/script.js"></script>
+
+</body>
+</html>

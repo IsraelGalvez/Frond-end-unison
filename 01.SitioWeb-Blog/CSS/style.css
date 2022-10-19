@@ -1,0 +1,560 @@
+/*
+Escritorio (XL revisamos en 1366px en adelante)
+*/
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a:visited,
+a:link,
+a:focus,
+a:hover,
+a:active {
+    list-style: none;
+    text-decoration: none;
+}
+
+header .logotipo {
+    width: 45%;
+}
+
+header .redes ul li i {
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.redes ul li i.fa-facebook {
+    background-color: #1877f2;
+}
+
+.redes ul li i.fa-instagram {
+    background-color: #b18768;
+}
+
+.redes ul li i.fa-twitter {
+    background-color: #1d9bf0;
+}
+
+.redes ul li i.fa-youtube {
+    background-color: #ff0000;
+}
+
+.redes ul li i.fa-snapchat {
+    background-color: #ff9052;
+}
+
+.fa-magnifying-glass {
+    color: white;
+}
+
+.fa-bars {
+    color: white;
+    font-size: 35px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: rgb(0, 0, 0, .5);
+}
+
+.redes ul li i {
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.redesMovil {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, 0);
+}
+
+/* Banner */
+
+.fade-slider {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.bannerEstatico {
+    background: #0000001c;
+    height: 200px;
+}
+
+/* Menu */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, .8);
+    overflow-x: hidden;
+    font-weight: 300;
+    display: none;
+    font-size: 34px;
+    line-height: 70px;
+}
+
+.btnClose {
+    position: absolute;
+    top: 100px;
+    right: 25%;
+    color: white;
+}
+
+.menu .nav {
+    margin-top: 10%;
+}
+
+/* grid categorias */
+.grid figure{
+    position: relative;
+    border-top: 0px solid white;
+    border-bottom: 0px;
+    border-left: 8px solid white;
+    border-right: 8px solid white;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.grid .columna1 {
+    width: 40%;
+}
+
+.grid .photo1 {
+    height: 400px;
+    background: url(../img/suramerica.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.grid .photo2 {
+    height: 300px;
+    background: url(../img/africa.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.grid .photo3 {
+    height: 300px;
+    background: url(../img/centroamerica.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.grid .photo4 {
+    height: 300px;
+    background: url(../img/europa.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.grid .photo5 {
+    height: 400px;
+    background: url(../img/norteamerica.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.grid .photo6 {
+    height: 200px;
+    background: url(../img/asia.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.grid figure p{
+    position: absolute;
+    left: 0px;
+    bottom: -15px;
+    width: 100%;
+    background: rgb(0, 0, 0, .7);
+    color: white;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.grid figure p:hover{
+    background: rgb(255, 57, 190, .7);
+}
+
+.introArticulo {
+    position: relative;
+}
+
+.fecha {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    padding: 5px 10px;
+    color: #aaa;
+    font-size: 13px;
+    background: url(../img/globo.jpg);
+    background-size: cover;
+    background-position: center top;
+    height: 40px;
+}
+
+/*.contenidoInicio{
+
+}*/
+
+.page-item.active .page-link{
+    background: #ff398e;
+    color: white;
+    border: 1px solid #bbb;
+}
+.page-link{
+    color: #777;
+}
+
+/* Contenido GridFooter categorias*/
+footer {
+    background: black;
+}
+
+/*.gridFooter{
+    height: 300px;
+    overflow: hidden;
+}*/
+
+.gridFooter figure{
+    position: relative;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.gridFooter .columna1 {
+    width: 40%;
+}
+
+.gridFooter .photo1 {
+    height: 200px;
+    background: url(../img/suramerica.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.gridFooter .photo2 {
+    height: 100px;
+    background: url(../img/africa.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.gridFooter .photo3 {
+    height: 100px;
+    background: url(../img/centroamerica.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.gridFooter .photo4 {
+    height: 100px;
+    background: url(../img/europa.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.gridFooter .photo5 {
+    height: 200px;
+    background: url(../img/norteamerica.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.gridFooter figure p{
+    position: absolute;
+    left: 0px;
+    bottom: -15px;
+    width: 100%;
+    background: rgb(0, 0, 0, .7);
+    color: white;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.gridFooter figure p:hover{
+    background: rgb(255, 57, 190, .7);
+}
+
+/* Scroll up */
+#scrollUp{
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	background: url(../img/flecha.jpg);
+}
+
+/* Preload */
+#preload {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+}
+
+#porcentajeCarga {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    color: white;
+    top: 52%;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#lineaCarga {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    left: 0%;
+    background: #666;
+}
+
+#rellenoCarga {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 50%;
+    background: #999;
+}
+
+#estadoCarga {
+    position: absolute;
+    background: url(../img/loader.gif);
+    background-position: center;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+}
+
+/* 
+Tablet horizontal (LG revisamos en 1024px) 
+*/
+@media (max-width: 1199px) and (min-width: 992px) {
+    .menu .nav {
+        margin-top: 15%;
+    }
+
+    .fade-slider {
+        height: 72px;
+    }
+
+    .btnClose {
+        left: 15%;
+        top: 50px;
+    }
+
+    .menu .nav {
+        margin-top: 25%;
+    }
+}
+
+/*
+Tablet Vertical (MD revisamos en 768px)
+*/
+@media (max-width: 991px) and (min-width: 768px) {
+    header .logotipo {
+        width: 55%;
+    }
+
+    .btnClose {
+        right: 15%;
+        top: 70px;
+    }
+
+    .menu .nav {
+        margin-top: 20%;
+    }
+
+    .grid figure p {
+        font-size: 18px;
+    }
+
+    .grid .photo1 {
+        height: 300px;
+    }
+
+    .grid .photo2 {
+        height: 200px;
+    }
+
+    .grid .photo3 {
+        height: 200px;
+    }
+
+    .grid .photo4 {
+        height: 200px;
+    }
+
+    .grid .photo5 {
+        height: 300px;
+    }
+
+    .fecha {
+        top: 10px;
+    }
+
+    .gridFooter figure{
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+    }
+
+    .gridFooter figure p{
+        font-size: 12px;
+    }
+}
+
+/*
+Móvil horizontal (SM revisamos en 576px)
+*/
+@media (max-width: 767px) and (min-width: 576px) {
+    header .logotipo {
+        width: 65%;
+    }
+
+    .fade-slider {
+        height: 72px;
+    }
+
+    .btnClose {
+        left: 15%;
+        top: 50px;
+    }
+
+    .menu .nav {
+        margin-top: 25%;
+    }
+
+    .grid .columna1 {
+        width: 50%;
+    }
+
+    .grid figure p {
+        font-size: 16px;
+    }
+
+    .grid .photo1 {
+        height: 200px;
+    }
+
+    .grid .photo2 {
+        height: 200px;
+    }
+
+    .grid .photo3 {
+        height: 200px;
+    }
+
+    .grid .photo4 {
+        height: 200px;
+    }
+
+    .grid .photo5 {
+        height: 200px;
+    }
+
+    .fecha {
+        top: 15px;
+    }
+
+    .redesMovil {
+        margin-bottom: -2%;
+    }
+}
+
+/*
+Móvil vertical (revisamos en 320px)
+*/
+@media (max-width: 575px) {
+    header .logotipo {
+        width: 100%;
+    }
+
+    .fade-slider {
+        height: 54px;
+    }
+
+    .btnClose {
+        left: 5%;
+        top: 10px;
+    }
+
+    .menu .nav {
+        margin-top: 25%;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .grid .columna1 {
+        width: 50%;
+    }
+
+    .grid figure p {
+        font-size: 14px;
+    }
+
+    .grid .photo1 {
+        height: 120px;
+    }
+
+    .grid .photo2 {
+        height: 120px;
+    }
+
+    .grid .photo3 {
+        height: 120px;
+    }
+
+    .grid .photo4 {
+        height: 120px;
+    }
+
+    .grid .photo5 {
+        height: 120px;
+    }
+
+    .grid .photo6 {
+        height: 120px;
+    }
+
+    .fecha {
+        top: 15px;
+        font-size: 12px;
+        height: 35px;
+    }
+
+    .contenidoInicio{
+        margin-bottom: 15%;
+    }
+}
