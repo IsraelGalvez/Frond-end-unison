@@ -91,10 +91,13 @@
   <section class="jd-slider fade-slider">
     <div class="slide-inner">
       <ul class="slide-area">
-        <li><img src="img/banner01.jpg" alt="En el mar" class="img-fluid"></li>
-        <li><img src="img/banner02.jpg" alt="En la pradera" class="img-fluid"></li>
-        <li><img src="img/banner03.jpg" alt="En windoxs xp" class="img-fluid"></li>
-        <li><img src="img/banner04.jpg" alt="En el cielito lindo" class="img-fluid"></li>
+        <li>
+            <div class="d-none d-md-block textoBanner">
+                <h1>Watch how we work</h1>
+                <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum</h5>
+            </div>
+            <img src="img/bannerGrande01.jpg" alt="En el mar" class="img-fluid">
+        </li>
       </ul>
     </div>
     <div class="controller d-none">
@@ -131,244 +134,83 @@
     </ul>
   </div>
 
-  <!-- Grid de categorias -->
-  <div class="container-fluid py-2 py-md-5 bg-white grid">
-    <div class="container p-0">
-      <div class="d-flex">
-        <div class="d-flex flex-column columna1">
-          <figure class="p-2 photo1" vinculo="categorias.html">
-            <p class="text-uppercase p-1 p-md-3 p-xl-4">Mi viaje por Sudamérica</p>
-          </figure>
-          <figure class="p-2 photo2" vinculo="categorias.html">
-            <p class="text-uppercase p-1 p-md-3 p-xl-4">Mi viaje por Africa</p>
-          </figure>
-          <figure class="d-block d-md-none p-2 photo6" vinculo="categorias.html">
-            <p class="text-uppercase p-1 p-md-3 p-xl-4">Mi viaje por Asia</p>
-          </figure>
-        </div>
-        <div class="d-flex flex-column flex-fill columna2">
-          <div class="d-block d-md-flex">
-            <figure class="p-2 flex-fill photo3" vinculo="categorias.html">
-              <p class="text-uppercase p-1 p-md-3 p-xl-4">Mi viaje por Centroamérica</p>
-            </figure>
-            <figure class="p-2 flex-fill photo4" vinculo="categorias.html">
-              <p class="text-uppercase p-1 p-md-3 p-xl-4">Mi viaje por Europa</p>
-            </figure>
-          </div>
-          <figure class="p-2 flex-fill photo5" vinculo="categorias.html">
-            <p class="text-uppercase p-1 p-md-3 p-xl-4">Mi viaje por Norteamérica</p>
-          </figure>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- Contenido Blog -->
-  <div class="container-fluid bg-white contenidoInicio pb-sm-5 pb-4">
+  <div class="container-fluid bg-white contenidoInicio py-2 py-md-4">
     <div class="container">
+      <!-- Breadcrumb -->
+      <ul class="breadcrumb bg-white p-0 mb-2 mb-md-4">
+        <li class="breadcrumb-item inicio"><a href="index.html">Inicio</a></li>
+        <li class="breadcrumb-item active hola">Mi viaje por sudamérica </li>
+      </ul>
       <div class="row">
         <!-- Columna izquierda -->
         <div class="col-12 col-md-8 col-lg-9 p-0 pr-lg-5">
-          <!-- Articulo 01 -->
-          <div class="row">
-            <div class="col-12 col-lg-5">
-              <a href="articulos.html">
-                <h5 class="d-block d-lg-none py-3">Type something here</h5>
-              </a>
-              <div class="d-block d-lg-none fecha">27.09.2022</div>
-              <a href="articulos.html">
-                <img src="img/articulo01.png" alt="Lorem" class="img-fluid" width="100%">
-              </a>
+        <!-- ARTICULO 1 -->
+          <div class="container">
+            <div class="fechaArticulo">30.09.2018</div>
+            <h3 class="tituloArticulo text-right text-muted w-75 float-right">Type something here lorem</h3>
+            <img src="./img/articulo.png" alt="" class="img-fluid my-3">
+            <p class="textoArticulo my-3">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque blanditiis soluta voluptatibus tenetur nesciunt! Commodi maxime deleniti, doloremque cupiditate veritatis ad nihil provident quis ut dolorem nostrum ipsam hic repudiandae.
+              Illo accusantium alias, ut quae asperiores, in quisquam inventore ipsam nam ea incidunt sed, molestias eligendi debitis? Sequi a minus qui nemo enim culpa voluptatibus amet iusto, accusamus numquam ipsam.
+            </p>
+            
+            <p class="textoArticulo my-3">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque blanditiis soluta voluptatibus tenetur nesciunt! Commodi maxime deleniti, doloremque cupiditate veritatis ad nihil provident quis ut dolorem nostrum ipsam hic repudiandae.
+              Illo accusantium alias, ut quae asperiores, in quisquam inventore ipsam nam ea incidunt sed, molestias eligendi debitis? Sequi a minus qui nemo enim culpa voluptatibus amet iusto, accusamus numquam ipsam.
+            </p>
+            <!-- Compartir en redes -->
+            <div class="float-right my-3 btnCompartir">
+              <div class="btn-group">
+                <button type="button" class="btn border-0 text-white" style="background: #1475E0;">
+                  <span class="fab fa-facebook pr-1"></span>Facebook<span class="lead pl-1"></span>
+                </button>
+                <button type="button" class="btn border-0 text-white" style="background: #00A6FF;">
+                  <span class="fab fa-twitter pr-1"></span>Twitter<span class="lead pl-1"></span>
+                </button>
+                <button type="button" class="btn border-0 text-white" style="background: #DD4D41;">
+                  <span class="fab fa-google pr-1"></span>Google<span class="lead pl-1"></span>
+                </button>
+              </div>
             </div>
-            <div class="col-lg-7 introArticulo">
-              <a href="articulos.html">
-                <h4 class="d-none d-lg-block">Type something here</h4>
-              </a>
-              <p class="my-2 my-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam praesentium optio officia, aut quo, non dolor,
-                recusandae corrupti cupiditate debitis itaque provident
-                quaerat fugiat impedit mollitia exercitationem. A, optio
-                labore?</p>
-              <a href="articulos.html" class="float-right">Leer Más</a>
-              <div class="d-none d-lg-block fecha">27.09.2022</div>
+            <!-- Avanzar retroceder -->
+            <div class="clearfix"></div>
+            <div class="d-flex justify-content-between my-3 d-none d-md-block">
+              <a href="articulos.html">Articulo anterior</a>
+              <a href="articulos.html">Articulo siguinte</a>
             </div>
-          </div>
-          <hr class="mb-4 mb-lg-5" style="border: 1px solid #79EF39">
-          <!-- Articulo 2 -->
-          <div class="row">
-            <div class="col-12 col-lg-5">
-              <a href="articulos.html">
-                <h5 class="d-block d-lg-none py-3">Type something here</h5>
-              </a>
-              <div class="d-block d-lg-none fecha">27.09.2022</div>
-              <a href="articulos.html">
-                <img src="img/articulo02.png" alt="Lorem" class="img-fluid" width="100%">
-              </a>
-            </div>
-            <div class="col-lg-7 introArticulo">
-              <a href="articulos.html">
-                <h4 class="d-none d-lg-block">Type something here</h4>
-              </a>
-              <p class="my-2 my-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam praesentium optio officia, aut quo, non dolor,
-                recusandae corrupti cupiditate debitis itaque provident
-                quaerat fugiat impedit mollitia exercitationem. A, optio
-                labore?</p>
-              <a href="articulos.html" class="float-right">Leer Más</a>
-              <div class="d-none d-lg-block fecha">27.09.2022</div>
-            </div>
-          </div>
-          <hr class="mb-4 mb-lg-5" style="border: 1px solid #79EF39">
-          <!-- Publicidad -->
-          <div class="d-block d-lg-none">
-            <img src="img/ad02.jpg" class="img-fluid" alt="" width="100%">
-          </div>
-          <!-- Articulo 3 -->
-          <div class="row">
-            <div class="col-12 col-lg-5">
-              <a href="articulos.html">
-                <h5 class="d-block d-lg-none py-3">Type something here</h5>
-              </a>
-              <div class="d-block d-lg-none fecha">27.09.2022</div>
-              <a href="articulos.html">
-                <img src="img/articulo03.png" alt="Lorem" class="img-fluid" width="100%">
-              </a>
-            </div>
-            <div class="col-lg-7 introArticulo">
-              <a href="articulos.html">
-                <h4 class="d-none d-lg-block">Type something here</h4>
-              </a>
-              <p class="my-2 my-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam praesentium optio officia, aut quo, non dolor,
-                recusandae corrupti cupiditate debitis itaque provident
-                quaerat fugiat impedit mollitia exercitationem. A, optio
-                labore?</p>
-              <a href="articulos.html" class="float-right">Leer Más</a>
-              <div class="d-none d-lg-block fecha">27.09.2022</div>
-            </div>
-          </div>
-          <hr class="mb-4 mb-lg-5" style="border: 1px solid #79EF39">
-          <!-- Articulo 4 -->
-          <div class="row">
-            <div class="col-12 col-lg-5">
-              <a href="articulos.html">
-                <h5 class="d-block d-lg-none py-3">Type something here</h5>
-              </a>
-              <div class="d-block d-lg-none fecha">27.09.2022</div>
-              <a href="articulos.html">
-                <img src="img/articulo04.png" alt="Lorem" class="img-fluid" width="100%">
-              </a>
-            </div>
-            <div class="col-lg-7 introArticulo">
-              <a href="articulos.html">
-                <h4 class="d-none d-lg-block">Type something here</h4>
-              </a>
-              <p class="my-2 my-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam praesentium optio officia, aut quo, non dolor,
-                recusandae corrupti cupiditate debitis itaque provident
-                quaerat fugiat impedit mollitia exercitationem. A, optio
-                labore?</p>
-              <a href="articulos.html" class="float-right">Leer Más</a>
-              <div class="d-none d-lg-block fecha">27.09.2022</div>
-            </div>
-          </div>
-          <hr class="mb-4 mb-lg-5" style="border: 1px solid #79EF39">
-          <!-- Articulo 5-->
-          <div class="row">
-            <div class="col-12 col-lg-5">
-              <a href="articulos.html">
-                <h5 class="d-block d-lg-none py-3">Type something here</h5>
-              </a>
-              <div class="d-block d-lg-none fecha">27.09.2022</div>
-              <a href="articulos.html">
-                <img src="img/articulo05.png" alt="Lorem" class="img-fluid" width="100%">
-              </a>
-            </div>
-            <div class="col-lg-7 introArticulo">
-              <a href="articulos.html">
-                <h4 class="d-none d-lg-block">Type something here</h4>
-              </a>
-              <p class="my-2 my-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam praesentium optio officia, aut quo, non dolor,
-                recusandae corrupti cupiditate debitis itaque provident
-                quaerat fugiat impedit mollitia exercitationem. A, optio
-                labore?</p>
-              <a href="articulos.html" class="float-right">Leer Más</a>
-              <div class="d-none d-lg-block fecha">27.09.2022</div>
-            </div>
-          </div>
-          <hr class="mb-4 mb-lg-5" style="border: 1px solid #79EF39">
-          <div class="container d-none d-md-block">
-            <ul class="pagination justify-content-center"></ul>
-          </div>
         </div>
+      </div>
         <!-- Columna Derecha -->
         <div class="d-none d-md-block pt-md-4 pt-lg-0 col-md-4 col-lg-3">
-          <div class="sobreMi">
-            <h4>Sobre Mi</h4>
-            <img src="img/sobreMi.jpg" alt="Lorem" class="img-fluid my-1">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Ducimus, fugiat voluptate? Earum labore placeat, maiores
-              suscipit laborum eligendi</p>
-          </div>
           <!-- Publicidad -->
-          <div class="my-4">
-            <img src="img/ad01.jpg" class="img-fluid" alt="">
+          <div class="mb-4">
+            <img src="img/ad03.png" class="img-fluid" alt="">
           </div>
-          <!-- Comentarios -->
+            <!-- Comentarios -->
           <div class="my-4">
-            <h4>Comentarios recientes</h4>
+            <h4>Articulos relacionados</h4>
             <div class="d-flex my-3">
-              <div class="w-100 w-xl-50 pr-3 pt-2">
-                <a href="articulos.html">
-                  <img src="img/com01.jpg" alt="Lorem" class="img-fluid">
-                </a>
-              </div>
+              <div class="w-100 w-xl-50 pr-3 pt-2"><a href="articulos.html"><img src="img/com01.jpg" alt="Lorem" class="img-fluid"></a></div>
               <div>
-                <a href="articulos.html" class="text-secondary">
-                  <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing 
-                    elit. Sed fugit minus placeat delectus non, quod labore tempora 
-                    blanditiis iusto provident qui hic deleniti culpa, architecto ipsum 
-                    illo nam dolor debitis!</p>
-                </a>
+                <a href="articulos.html" class="text-secondary"><p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing 
+                  elit. Sed fugit minus placeat delectus non</p></a>
               </div>
             </div>
             <div class="d-flex my-3">
-              <div class="w-100 w-xl-50 pr-3 pt-2">
-                <a href="articulos.html">
-                  <img src="img/com02.jpg" alt="Lorem" class="img-fluid">
-                </a>
-              </div>
+              <div class="w-100 w-xl-50 pr-3 pt-2"><a href="articulos.html"><img src="img/com02.jpg" alt="Lorem" class="img-fluid"></a></div>
               <div>
-                <a href="articulos.html" class="text-secondary">
-                  <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing 
-                    elit. Sed fugit minus placeat delectus non, quod labore tempora 
-                    blanditiis iusto provident qui hic deleniti culpa, architecto ipsum 
-                    illo nam dolor debitis!</p>
-                </a>
+                <a href="articulos.html" class="text-secondary"><p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing 
+                  elit. Sed fugit minus placeat delectus non</p></a>
               </div>
             </div>
             <div class="d-flex my-3">
-              <div class="w-100 w-xl-50 pr-3 pt-2">
-                <a href="articulos.html">
-                  <img src="img/com03.jpg" alt="Lorem" class="img-fluid">
-                </a>
-              </div>
+              <div class="w-100 w-xl-50 pr-3 pt-2"><a href="articulos.html"><img src="img/com03.jpg" alt="Lorem" class="img-fluid"></a></div>
               <div>
-                <a href="articulos.html" class="text-secondary">
-                  <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing 
-                    elit. Sed fugit minus placeat delectus non, quod labore tempora 
-                    blanditiis iusto provident qui hic deleniti culpa, architecto ipsum 
-                    illo nam dolor debitis!</p>
-                </a>
+                <a href="articulos.html" class="text-secondary"><p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing 
+                  elit. Sed fugit minus placeat delectus non</p></a>
               </div>
             </div>
-            <!-- Publicidad -->
-            <div class="my-4">
-              <img src="img/ad04.png" class="img-fluid" alt="">
-            </div>
-            <div class="my-4">
-              <img src="img/ad05.png" class="img-fluid" alt="">
             </div>
           </div>
         </div>

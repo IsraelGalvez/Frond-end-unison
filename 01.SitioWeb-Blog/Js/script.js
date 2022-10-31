@@ -42,11 +42,15 @@ $(".btnClose").click(function () {
 })
 
 /* Grid categorias */
-$(".grid figure").mouseover(function(){
+$(".grid figure, .gridFooter figure").mouseover(function(){
     $(this).css({"background-position":"right bottom"})
 })
-$(".grid figure").mouseout(function(){
+$(".grid figure, .gridFooter figure").mouseout(function(){
     $(this).css({"background-position":"left top"})
+})
+$(".grid figure, .gridFooter figure").click(function(){
+    var vinculo = $(this).attr("vinculo");
+    window.location = vinculo;
 })
 
 /* Paginacion */
@@ -74,3 +78,63 @@ $.scrollUp({
     animSpeed: 2000,
 	easingType: "easeOutQuint"
 })
+
+/*=================================================
+PRELOAD
+=================================================*/
+
+$("body").css({"overflow-y":"hidden"});
+
+var cargarImg = $("img");
+console.log("cargarImg", cargarImg);
+
+var cargarScript = $("script");
+console.log("cargarScript", cargarScript);
+
+var cargarCSS = $("link");
+console.log("cargarCSS", cargarCSS);
+
+var cargarVideos = $("video");
+console.log("cargarVideos", cargarVideos);
+
+var cargarAudios = $("audio");
+console.log("cargarAudios", cargarAudios);
+var totalObjetos = [];
+var numItem = 0;
+var valorPorcentaje = 0;
+var incremento = 0;
+var numCarga = 0;
+
+totalObjetos.push(cargarImg, cargarScript, cargarCSS, cargarVideos, cargarAudios);
+
+totalObjetos.forEach(funcionForEach);
+
+function funcionForEach(item, index){
+
+    for(var i = 0; i < item.length; i++){
+        numItem++;
+
+        valorPorcentaje = 100/numItem;
+    }
+
+    for(var i = 0; i < item.length; i++){
+        preload(i, item);
+    }
+
+}
+function preload(i, item){
+    setTimeout(function(){
+        $(item[i]).ready(function(){
+            numCarga++;
+    
+            incremento = Math.floor(numCarga * valorPorcentaje);
+            $("#porcentajeCarga").html(incremento+"%");
+            $("#rellenoCarga").css({"width":incremento+"%"})
+    
+            if(incremento >= 100){
+                $("#preload").delay(350).fadeOut("slow");
+                $("body").delay(350).css({"overflow-y":"scroll"})
+            }
+        })
+    },i*100)
+}
